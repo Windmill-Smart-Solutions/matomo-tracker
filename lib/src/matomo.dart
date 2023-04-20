@@ -128,7 +128,7 @@ class MatomoTracker {
       throw const AlreadyInitializedMatomoInstanceException();
     }
 
-    if (visitorId != null && visitorId.length != 16) {
+    if (visitorId != null) {
       throw ArgumentError.value(
         visitorId,
         'visitorId',
