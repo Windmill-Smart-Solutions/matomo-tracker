@@ -128,14 +128,6 @@ class MatomoTracker {
       throw const AlreadyInitializedMatomoInstanceException();
     }
 
-    if (visitorId != null) {
-      throw ArgumentError.value(
-        visitorId,
-        'visitorId',
-        'The visitorId must be 16 characters long',
-      );
-    }
-
     log.setLogging(level: verbosityLevel);
 
     this.siteId = siteId;
